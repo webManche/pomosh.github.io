@@ -1,0 +1,9 @@
+.clearfix::after {
+    clear: both;
+}
+
+.clearfix::before, .clearfix::after {
+    display: table;
+    content: "";
+    line-height: 0;
+}

@@ -1,0 +1,45 @@
+header label:hover{
+ cursor: pointer;
+ background: rgba(0,0,0,0.3);
+}
+
+@media all and (max-width: 768px) {
+
+ header label {
+  display: block;
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  border-right: 1px solid #fff;
+ }
+ .section-inner.indents {
+  padding: 0;
+ }
+ .menu {
+  position: absolute;
+  width: 200px;
+  margin-left: -200px;
+  transition: all 0.5s;
+  z-index: 1000;
+ }
+ .menu ul {
+  flex-direction: column;
+ }
+ #dws-menu:checked ~ .menu {
+  margin: 0;
+ }
+ .menu li {
+  border-top: 1px solid #fff;
+ }
+ .menu li a {
+  font-size: 14px;
+  padding: 15px 10px;
+ }
+ div.banner {
+  height: 200px;
+ }
+ h2.text-banner {
+  left: 15%;
+  font-size: 1.5em;
+ }
+}
